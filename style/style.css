@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, p{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+    background-color: rgba(23, 25, 37, 0.575);
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar .nav-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 10px auto;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar .nav-list li a:hover{
+    background: rgb(79, 83, 114);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.home{
+    height: 100vh;
+    padding: 55px 0;
+    background-image: url('../media/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .home .card{
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(26, 29, 44, 0.7);
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(51, 60, 129, 0.9),    
+    -5px -5px 20px rgba(187, 194, 248, 0.9);
+    color: white;
+}
+
+.card img{
+    margin-top: 50px;
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(51, 60, 129, 0.9),    
+    -5px -5px 20px rgba(187, 194, 248, 0.9);
+}
+
+.card .card-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card .card-social i{
+    color: rgba(187, 194, 248, 0.9);
+    font-size: 36px;
+}
+
+.card .card-social i:hover{
+    color: rgb(62, 66, 94);
+    filter: drop-shadow(3px 3px 7px );
+    -webkit-filter: drop-shadow(3px 3px 7px rgba(55, 62, 107, 0.9));
+}
+
+.sobre-mi{
+    background: rgb(23, 25, 37);
+    text-align: center;
+}
+
+.sobre-mi-titulo h2{
+    padding: 50px;
+    height: 100%;
+    font-size: 3em;
+    color: white;
+}
+
+.sobre-mi-text{
+    width: 100%;
+    height: 73vh;
+}
+
+.sobre-mi-text p{
+    height: 58vh;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.datos-personales{
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: url('../media/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.datos-personales h2{
+    padding: 60px 0;
+    font-size: 30px;
+    color: rgb(23, 25, 37);
+}
+
+.datos-personales .datos-personales-dp{
+    margin: auto;
+    height: 400px;
+    width: 350px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    justify-content: center;
+    background: rgba(36, 39, 58, 0.575);
+    box-shadow: 5px 5px 20px rgba(51, 60, 129, 0.9),   
+    -5px -5px 20px rgba(187, 194, 248, 0.9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.datos-personales-ol{
+    list-style: none;
+}
+
+.datos-personales-ol .datos-personales-item{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.datos-personales-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.datos-personales-item a:hover{
+    color: rgba(187, 194, 248, 0.9);
+}
+
+.card-intereses{
+    width: 100%;
+    height: 100vh;
+    background: rgb(23, 25, 37);
+    z-index: 0;
+}
+
+.intereses-in{
+    width: 100%;
+}
+
+.intereses-in-cards{
+    margin-top: 50px;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-int{
+    width: 100px;
+    background-color: rgb(62, 66, 94);
+    margin: 25px;
+    border-radius:15px;
+    box-shadow: 5px 5px 20px rgba(38, 45, 105, 0.9),   
+    -5px -5px 20px rgba(187, 194, 248, 0.9);
+}
+
+.card-int:hover{
+    background: rgba(36, 39, 58, 0.575);
+    color: white;
+}
+
+.card-int img{
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.estudios{
+    margin-top: auto;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(23, 25, 37, 0.575);
+    display: flex;
+    color: white;
+    z-index: 0;
+}
+
+.skills{
+    display: none;
+}
+
+.proyect{
+    display: none;
+}
