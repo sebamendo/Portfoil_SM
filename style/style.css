@@ -132,7 +132,6 @@ nav {
     box-shadow: 7px 7px 25px rgb(0, 0, 0),
         -7px -7px 25px rgb(83, 83, 83);
     animation: animate-shadw 30s ease-in-out infinite;
-    -webkit-animation: animate-shadw 30s linear infinite;
 }
 
 @keyframes animate-shadw {
@@ -196,8 +195,8 @@ nav {
 }
 
 .container-sobre-mi {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 15vh 0 70px 0;
 }
 
@@ -218,6 +217,11 @@ nav {
 .container-datos-personales {
     padding: 75px 0 0 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(../media/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .datos-personales-lista {
@@ -284,7 +288,6 @@ nav {
 }
 
 .container-estudios-com {
-    background-image: url(../media/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -330,6 +333,10 @@ nav {
 
 .container-proyectos {
     padding: 75px 0 0 0;
+    background-image: url(../media/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cards-proyectos {
@@ -398,7 +405,23 @@ nav {
     text-decoration: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 500px) {
+    .container-sobre-mi {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sobre-mi .sobre-mi-text {
+        margin: auto;
+        width: 80%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 980px) {
 
     * {
         padding: 0;
@@ -421,11 +444,121 @@ nav {
         opacity: 1;
     }
 
-    .nav-list li.oct{
+    .nav-list li.oct {
         display: none;
     }
 
     .hamburger-btn {
         display: none;
     }
+
+    .sobre-mi {
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .sobre-mi-text {
+        text-align: center;
+        max-width: 600px;
+        padding-top: 40px;
+    }
+
+
+    .container-datos-personales {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .intereses {
+        padding-top: 0;
+    }
+
+    .intereses .cards-intereces {
+        width: 450px;
+    }
+
+    .cards-intereces .card {
+        margin: 40px 10px;
+    }
+
+    .datos-personales,
+    .intereses {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .titulo {
+        margin-bottom: 20px;
+    }
+
+    .container-estudios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .container-estudios-com,
+    .skills {
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .estudios-primarios,
+    .estudios-adicionales {
+        margin-bottom: 20px;
+    }
+
+    .estudios-titulo,
+    .titulo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .card-skill {
+        width: 200px;
+    }
+    
+    .card-proyecto {
+        margin-left: 150px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+    
+    .card-proyecto:hover {
+        transform: scale(1.1);
+        transition: 3s;
+        background: rgba(42, 59, 81, 0.795);
+}
+
+    @keyframes card-appear {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .card-proyecto p {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .card-proyecto:hover p {
+        color :rgb(233, 132, 0);
+        opacity: 1;
+        transform: scale(1.2);
+        animation: card-appear 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    
+
 }
