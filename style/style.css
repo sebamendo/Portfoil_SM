@@ -117,7 +117,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../media/bg1.jpg);
+    background-image: url(../media/BG/bg1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,7 +218,7 @@ nav {
     padding: 75px 0 0 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    background-image: url(../media/bg3.jpg);
+    background-image: url(../media/BG/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,7 +333,7 @@ nav {
 
 .container-proyectos {
     padding: 75px 0 0 0;
-    background-image: url(../media/bg2.jpg);
+    background-image: url(../media/BG/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -359,42 +359,48 @@ nav {
 }
 
 .card-proyecto.automotive {
-    background-image: url(../media/automotive.jpg);
+    background-image: url(../media/proyectos/automotive.jpg);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-proyecto.cv2 {
-    background-image: url(../media/CV1.jpg);
+    background-image: url(../media/proyectos/CV1.jpg);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-proyecto.sp {
-    background-image: url(../media/somosProya1.jpg);
+    background-image: url(../media/proyectos/somosProya1.jpg);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-proyecto.lg1 {
-    background-image: url(../media/login1.jpg);
+    background-image: url(../media/proyectos/login1.jpg);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-proyecto.lg2 {
-    background-image: url(../media/login2.jpg);
+    background-image: url(../media/proyectos/login2.jpg);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-proyecto.rep {
-    background-image: url(../media/rproductor.jpg);
+    background-image: url(../media/proyectos/rproductor.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-proyecto.AP {
+    background-image: url(../media/proyectos/WebAP.png);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
